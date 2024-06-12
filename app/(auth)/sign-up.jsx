@@ -10,7 +10,7 @@ import { createUser } from '../../lib/appwrite';
 
 const SignUp = () => {
   const [isSubmitting, setSubmitting] = useState(false);
-  
+
   const submit = async () => {
     if (!form.email || !form.password || !form.username) {
       Alert.alert('Error', 'Please fill in all the fields')
